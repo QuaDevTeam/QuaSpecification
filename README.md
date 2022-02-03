@@ -1,0 +1,2 @@
+# QuaScriptSpec
+Specification for QuaScript
