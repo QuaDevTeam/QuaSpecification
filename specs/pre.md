@@ -118,7 +118,7 @@ mayu: 这稳定性真是了不得。感觉根本就不像是抓着人的手臂�
 
 ### Basic Syntax
 The script is composed of many pairs of Actions and Statements. Each pair of them is divided by a blank line.
-```
+```yaml
 Action: Action1
 Statement: Statement1
 
@@ -131,18 +131,18 @@ Statement: Statement2
 ### Statement
 
 #### Dialogue
-```
+```yaml
 Character Name: Sentence
 ```
 The short name of characters can be defined in meta.yml. It will be auto replaced by full name.
 
 #### Narration
-```
+```yaml
 Sentence
 ```
 
 #### Selection
-```
+```yaml
 select:
     options:
         - option1
@@ -151,7 +151,7 @@ select:
 ```
 
 #### Input
-```
+```yaml
 input:
 	text: text1
 	event: input1
@@ -164,7 +164,7 @@ The key can refer to the object defined before and allows the action to modify i
 
 #### Timeline
 At every statement, the execution of the script will pause. Timeline is required so actions can be triggered when play the voice.
-```
+```yaml
 0:00:
 	actions
 0:02:
@@ -172,13 +172,13 @@ At every statement, the execution of the script will pause. Timeline is required
 ```
 If timeline is not needed, the actions can be directly placed in the root.
 
-```
+```yaml
 actions: 
 	- xxx
 ```
 
 #### Audio
-```
+```yaml
 audio:
     mayu:
         file: voices/mayu-25
@@ -189,7 +189,7 @@ audio:
 ```
 
 #### Characters (Sprites)
-```
+```yaml
 characters:
     mayu:
         file: characters/mayu-12
@@ -198,7 +198,7 @@ characters:
 ```
 
 #### Scene (Background)
-```
+```yaml
 scene:
     lab:
         file: scenes/lab-day
@@ -206,7 +206,7 @@ scene:
 ```
 
 #### Event
-```
+```yaml
 event:
     customEvent:
         - param1
@@ -214,7 +214,7 @@ event:
 Event is sent to Control Scripts
 
 #### Draw
-```
+```yaml
 draw:
     customDraw:
         - param1
