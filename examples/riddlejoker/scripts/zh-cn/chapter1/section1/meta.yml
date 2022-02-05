@@ -1,0 +1,10 @@
+name: section1
+entry: section1-entry.qs
+character:
+  nanami:
+    show: 七海
+  mayu:
+    show: 茉优
+  satoru:
+    show: 晓
+    color: #fff

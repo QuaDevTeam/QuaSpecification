@@ -1,16 +1,19 @@
 ```yaml
 0:00:
 	audio:
-		- nanami-67
+		- nanami:
+			file: nanami-67
 		- background:
 			file: background-13
-			action: play
+			action: start
 			transition: fade-in 
 			offset: 0:00
+			repeat: true
+			mute-when-play: nanami
 	characters:
 		nanami:
 			file: nanami-12
-			action: show
+			action: start
 			position: center
 			transition:
 				- name: fade-in
@@ -25,12 +28,13 @@
 					direction: right
 					curve: ease-out
 	scene:
-		file: dorm-2
-		position: top
-		size: cover 
-		transition: fade-in
-		animation:
-			- move
+		dorm:
+			file: dorm-2
+			position: top
+			size: cover 
+			transition: fade-in
+			animation:
+				- move
 0:02:
 	characters:
 		nanami:
@@ -39,9 +43,22 @@
 			animation:
 				- shake:
 					action: stop
-	custom:
-		customEffect:
-			- effect-123
+	event:
+		customEvent:
+			- param1
+	draw:
+		customDraw:
+			- param1
 nanami: Onii-chan Baka!!!
-			
+
+select:
+	options:
+		- choice 1
+		- choice 2
+		- choice 3
+	event: select12
+
+input:
+	text: 请输入你的名字
+	event: input2
 ```
