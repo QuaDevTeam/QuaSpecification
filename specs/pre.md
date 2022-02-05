@@ -157,6 +157,13 @@ input:
 	event: input1
 ```
 
+#### Pause
+```
+pause: null
+
+pause: 10s
+```
+
 ### Action
 
 Every action is many pairs of key:value, as key is the object name and value is the object parameters.
