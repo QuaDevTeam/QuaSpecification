@@ -16,7 +16,7 @@ name: Game Name
 author: XXX Studio
 date: XXXX-XX-XX
 langs:
-	- zh-cn
+    - zh-cn
 # or langs: null
 ```
 
