@@ -54,8 +54,17 @@ scripts
 
 ### Script Metadata
 ```yaml
-lang: zh-cn
-entry: chapter1/section1
+entry: chapter1/section1/section1-entry.qs
+character:
+  nanami:
+    show: 七海
+  mayu:
+    show: 茉优
+  satoru:
+    show: 晓
+    color: #fff
+resources:
+  file1: scene/bg1.png
 ```
 
 ### Script Locate
@@ -66,23 +75,8 @@ The root directory is the folder with language name.
 The QuaScript File has an extension name of `.qs`
 The Control Flow is written in JavaScript.
 ```
-meta.yml  
 script.qs  
 script.js
-```
-
-`meta.yml` specify the entry point of the script and other info
-```yaml
-name: section1
-entry: section1-entry.qs
-character:
-  nanami:
-    show: 七海
-  mayu:
-    show: 茉优
-  satoru:
-    show: 晓
-    color: #fff
 ```
 
 ### Syntax
