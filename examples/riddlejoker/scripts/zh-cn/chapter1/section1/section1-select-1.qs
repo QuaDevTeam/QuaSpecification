@@ -1,12 +1,5 @@
 satoru: ······？
 
-characters:
-	mayu:
-        action: hide
-    nanami:
-		file: characters/nanami-12
-        action: show
-		position: center
 scene:
     lab:
         position: right
@@ -20,3 +13,11 @@ mayu: 啊，那我跟你换？
 nanami: 不、不用了，我不想试。我一点也不羡慕
 
 mayu: 你盯着我们看，不就是因为想试试吗？
+
+scene:
+    lab:
+        position: left
+        transition: fade-in
+        effect:
+            - blur
+。。。无法理解

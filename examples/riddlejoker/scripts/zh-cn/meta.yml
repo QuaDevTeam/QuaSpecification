@@ -1,2 +1,11 @@
-lang: zh-cn
-entry: chapter1/section1
+entry: chapter1/section1/section1-entry
+character:
+  nanami:
+    show: 七海
+  mayu:
+    show: 茉优
+  satoru:
+    show: 晓
+    color: "#fff"
+resources:
+  bgm/info: sa
