@@ -1,2 +1,6 @@
-# QuaScriptSpec
-Specification for QuaScript
+# QuaSpecification
+Specification for QuaEngine & QuaScript
+
+## QuaEngine Architecture
+
+![](./images/QuaEngine-Architecture.png)
