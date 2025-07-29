@@ -39,21 +39,21 @@ QuaEngine is a **renderer-agnostic TypeScript framework** for building ADV (visu
 2. **Renderer(s)** – UI layer(s) that render sprites, text boxes, UI chrome, etc. (Canvas, WebGL, DOM, React ...).
 3. **Pipeline** – bidirectional bridge ferrying store diffs and render commands between Engine and Renderer.
 
-![Architecture](../images/QuaEngine-Architecture.png)
+
 
 ### Architecture Diagram
 
 ```mermaid
 graph TD
   subgraph Core_Engine
-    QuaStore["QuaStore\nPub-Sub KV"]
-    QuaAsset["QuaAsset\nLoader"]
+    QuaStore["QuaStore Pub-Sub KV"]
+    QuaAsset["QuaAsset Loader"]
     Executor["Script Executor"]
     Plugins["Plugins"]
   end
 
   Renderer["Renderer(s)"]
-  Pipeline["Pipeline\nStore Diffs & Input"]
+  Pipeline["Pipeline Store Diffs & Input"]
 
   QuaAsset --> Executor
   Executor -->|"read / write"| QuaStore
